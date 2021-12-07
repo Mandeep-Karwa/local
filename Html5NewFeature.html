@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HTML5 New Input Tags Examples !!! </title>
+<style type="text/css">
+
+input[type="url"]:valid {
+	outline: 2px solid rgba(27, 226, 27, 0.884);
+}
+
+input[type="url"]:invalid {
+	outline: 2px solid red;
+}
+</style>
+<style type="text/css">
+input[type="number"]:valid {
+	outline: 2px solid green;
+}
+
+input[type="number"]:invalid {
+	outline: 2px solid red;
+}
+</style>
+<style type="text/css">
+</style>
+<style type="text/css">
+canvas {
+	border: 1px solid #000;
+}
+</style>
+</head>
+<body>
+	<form>
+		<label> Website URL: <input type="url" name="mywebsite"
+			required>
+		</label>
+	
+	<p>
+		<strong>Note</strong>: Enter URL in the form like
+		http://www.google.com
+	</p>
+	
+		<label> Select Number: <input type="number" value="1" min="1"
+			max="10" step="0.25" name="mynumber">
+<p>
+		<strong>Note</strong>: If you try to enter the number out of the range
+		(1-10) or text character it will show error.
+	</p>
+<br/>
+		</label> <br> Autofocus and Placeholder Example <br><input type="text"
+			name="user-name" id="user-name" placeholder="at least 3 characters"
+			autofocus> 
+			<br> Regular expression example </br>
+			<label>Mobile Number: 
+<input 	pattern="^\[7-9]{1}[0-9]{9}$" name="product" type="text"
+			title="10 digit number required" required/>
+		</label>
+		<br/>
+Enter a date before 1980-01-01:<br>
+<input type="date" name="bday" max="1979-12-31" required><br><br>
+Enter a date after 2000-01-01:<br>
+<input type="date" name="bday2" min="2000-01-02" required><br><br>
+
+<input type="Submit"/>
+Enter Email : <input type="email" required>
+	</form>
+	
+	
+</body>
+</html>
+
+<!-- 
+
+placeholder
+autofocus
+autocomplete
+required
+pattern
+list
+multiple
+novalidate
+formnovalidate
+form
+formaction
+formenctype
+formmethod
+formtarget
+ -->
